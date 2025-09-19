@@ -122,7 +122,7 @@ nav .container {
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+                url('/images/WallBannerLisPlates.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -180,6 +180,20 @@ nav .container {
 
 .contact-section {
     background: var(--accent-dark);
+}
+
+/* Hero-Banquet Section */
+.hero-banquet {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('/images/BanquetVenueWall.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
 }
 
 /* Events Grid */
@@ -376,4 +390,34 @@ footer p {
 .admin-button::before {
     content: '\u2699';
     font-size: 1.5rem;
+}
+
+.gallery-section {
+  padding: 60px 20px;
+  background: var(--secondary-dark);
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
 }
