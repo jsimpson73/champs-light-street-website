@@ -393,31 +393,54 @@ footer p {
 }
 
 .gallery-section {
-  padding: 60px 20px;
-  background: var(--secondary-dark);
-  text-align: center;
+    padding: 60px 20px;
+    background: var(--secondary-dark);
+    text-align: center;
 }
 
 .gallery-section h2 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
 }
 
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
 }
 
 .gallery-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .gallery-grid img:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+#social {
+    var(--accent-color)
+    text-align: center; /* centers the heading text */
+    padding: 20px;
+}
+
+#social div {
+    display: flex;
+    justify-content: center; /* centers icons horizontally */
+    gap: 20px; /* space between icons */
+    margin-top: 15px;
+}
+
+#social div a {
+    font-size: 2rem;     /* icon size */
+    color: #333;         /* default color */
+    transition: color 0.3s;
+}
+
+#social div a:hover {
+    color: #ffcc00;      /* hover color */
 }
